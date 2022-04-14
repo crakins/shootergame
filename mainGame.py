@@ -15,7 +15,7 @@ import random
 # 初始化游戏
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption('飞机大战')
+pygame.display.set_caption('Oscar Fighter Pilot')
 
 # 载入游戏音乐
 bullet_sound = pygame.mixer.Sound('resources/sound/bullet.wav')
@@ -29,7 +29,7 @@ pygame.mixer.music.play(-1, 0.0)
 pygame.mixer.music.set_volume(0.25)
 
 # 载入背景图
-background = pygame.image.load('resources/image/background.png').convert()
+background = pygame.image.load('resources/image/background_earth.png').convert() #background.png
 game_over = pygame.image.load('resources/image/gameover.png')
 
 filename = 'resources/image/shoot.png'
